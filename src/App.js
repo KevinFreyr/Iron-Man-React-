@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import matur from './matur.png';
+
+import Questions from './questions/questions';
+
 import './App.css';
 
 class App extends Component {
@@ -10,9 +13,7 @@ class App extends Component {
           <img src={matur} className="App-logo" alt="logo" />
         </div>
         <p className="App-intro">
-          <div>
-            Question 1
-          </div>
+          <Questions />
         </p>
       </div>
     );

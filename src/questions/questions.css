@@ -1,0 +1,12 @@
+.Questions-container {
+  text-align: center;
+  border: 2px solid black;
+  width: 50%;
+  height: 50%;
+}
+
+.Questions-options {
+  text-align: center;
+  border: 2px solid black;
+}
+
