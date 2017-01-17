@@ -10,8 +10,7 @@ class Questions extends Component {
             <div className="Questions-options">Answer 4</div>
             <div className="Questions-options">Answer 5</div>
             <div className="Questions-options">Answer 6</div>
-            <div className="Questions-button-container">
-            </div>
+            <div className="Questions-button-container"> </div>
             </div>
         );
     }
