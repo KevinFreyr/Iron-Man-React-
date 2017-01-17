@@ -4,11 +4,13 @@ class Questions extends Component {
     render() {
         return (
             <div>
-            <div>Question 1</div>
-            <div>Answer 1</div>
-            <div>Answer 2</div>
-            <div>Answer 3</div>
-            <div>Answer 4</div>
+            <div>Hvað vilt þú hafa í matinn?</div>
+            <div>Dominos</div>
+            <div>Eldsmiðjan</div>
+            <div>Pítan</div>
+            <div>Roadhouse</div>
+            <div>Saffran</div>
+            <div>Langar ekki í mat</div>
             </div>
         );
     }
