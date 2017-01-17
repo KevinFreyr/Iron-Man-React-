@@ -1,0 +1,30 @@
+{
+  "name": "iron-man-react",
+  "version": "1.0.0",
+  "description": "Collab, react practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kristjanjoelk/Iron-Man-React-.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "kevinfreyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kristjanjoelk/Iron-Man-React-/issues"
+  },
+  "homepage": "https://github.com/Kristjanjoelk/Iron-Man-React-#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "gulp-watch": "^4.3.11"
+  }
+}
