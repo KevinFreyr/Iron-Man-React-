@@ -1,0 +1,43 @@
+.option {
+    width: 40%;
+    font-size: 60px;
+    border: 2px solid black;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}
+.option img {
+    width: 50%;
+    height: 150px;
+}
+
+.option3 {
+    width: 30%;
+    font-size: 60px;
+    border: 2px solid green;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}
+
+.option2 {
+    width: 30%;
+    font-size: 60px;
+    border: 2px solid yellow;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}
+
+.option1 {
+    width: 30%;
+    font-size: 60px;
+    border: 2px solid red;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}

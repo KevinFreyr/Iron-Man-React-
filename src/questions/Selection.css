@@ -1,0 +1,10 @@
+.selection {
+    width: 40%;
+    font-size: 60px;
+    border: 2px solid black;
+    background: blue;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+}

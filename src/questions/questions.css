@@ -1,12 +1,16 @@
 .Questions-container {
-  text-align: center;
-  border: 2px solid black;
-  width: 50%;
-  height: 50%;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    border: 2px solid black;
+    width: 60%;
 }
 
-.Questions-options {
+.Options-container {
   text-align: center;
+  margin: 0 auto;
   border: 2px solid black;
+  width: 100%;
+  display: inline-block;
 }
 
