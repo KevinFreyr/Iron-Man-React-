@@ -66,24 +66,26 @@ class Questions extends Component {
 
     render() {
         return (
-            <div className="Questions-container">
-                <div className="Options-container">
-                    {this.state.options.map(function(value, i) {
-                        let curr = this.state.current;
-                        return( 
-                            <Option
-                                key     = {i}
-                                loc     = {i}
-                                src     = {value}
-                                update  = {this.update.bind(this)}
-                                points  = {this.state.points[curr]} 
-                                show    = {true}
-                                />
-                        )
-                    }.bind(this))}
-                        
+            <div className="container">
+                <div className="row">
+                    <div className=".col-md-4">
+                        {this.state.options.map(function(value, i) {
+                            let curr = this.state.current;
+                            return( 
+                                <Option
+                                    key     = {i}
+                                    loc     = {i}
+                                    src     = {value}
+                                    update  = {this.update.bind(this)}
+                                    points  = {this.state.points[curr]} 
+                                    show    = {true}
+                                    />
+                            )
+                        }.bind(this))}
                     </div>
-                    <div className="Selection-container">
+                </div>
+                    <div className="row">
+                        <div className=".col-md-4">
                             {this.state.selected.map(function(value, i) {
                                 let curr = this.state.current; 
                                 return( 
@@ -95,9 +97,9 @@ class Questions extends Component {
                                         remove  = {this.remove.bind(this)} />
                                 )
                             }.bind(this))}
-                        
                         </div>
-                <div className="Questions-button-container"> 
+                    </div>
+                <div className="row"> 
                     <button>Senda</button> <button>Hreinsa</button> <button>test</button>
                 </div>
             </div>
