@@ -32,6 +32,7 @@ class App extends Component {
     this.state = {
       email: null,
       numVoters: '',
+      gameID: '',
       randomIDS: []
     }
     this.handleChange = this.handleChange.bind(this);
@@ -46,9 +47,10 @@ class App extends Component {
     console.log('number of voters selected: ' + event.target.numVoters);
     event.preventDefault();
     var newArray = this.state.randomIDS.slice(); 
+    var game = guid();
     for(var i = 0; i < parseInt(this.state.numVoters); i++) {
       var temp = guid();
-      newArray.push(temp);
+      newArray.push(game + "-" + temp);
 
     }
     this.setState({
@@ -57,9 +59,8 @@ class App extends Component {
               // ... at this point the state of the component is set ...
               console.log("WTF!! is wrong with this");
               console.log(this.state.randomIDS);
-              var tempID = guid();
               var test = new Data;
-              test.writeToDatabase(tempID, this.state.randomIDS);
+              test.writeToDatabase(game, this.state.randomIDS);
         }
     )
   }
@@ -75,7 +76,7 @@ class App extends Component {
             <form onSubmit={this.handleSubmit}>
               <label>
                 Name:
-                <input value={this.state.value} onChange={this.handleChange} />
+                <input type="number" min="1" max="10" value={this.state.value} onChange={this.handleChange} />
               </label>
               <input type="submit" value="Submit" />
             </form>

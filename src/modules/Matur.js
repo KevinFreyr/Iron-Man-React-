@@ -12,11 +12,13 @@ class Matur extends Component {
     this.state = {
       email: null,
       numVoters: 0,
-      valid: true
+      valid: true,
+      params: props.params.id.split("-")
     }
     console.log("test::::" + props.params.id);
-    var test = new Data;
-    test.checkIfValid(props.params.id);
+    var test = new Data();
+    test.isGameValid(this.state.params[0]);
+    test.isVoterValid(this.state.params[0], this.state.params[1]);
   }
 
 
@@ -26,7 +28,7 @@ class Matur extends Component {
         <div className="App-header">
           <img src={mat} className="App-logo" alt="logo" />
         </div>
-        <h2>ID: {this.props.params.id}</h2>
+        <h2>ID: {this.state.params[1]}</h2>
           <Questions />
       </div>
     );
